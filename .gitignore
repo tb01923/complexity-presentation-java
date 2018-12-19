@@ -1,0 +1,11 @@
+.idea
+.idea/workspace.xml
+.idea/tasks.xml
+package-lock.json
+node_modules
+coverage
+*.log
+*.out
+*.iml
+out/
+logs/
