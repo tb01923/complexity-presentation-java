@@ -23,7 +23,7 @@ public class DemoMaybe extends Demo {
                         map(square).
                         map(half) ;
 
-        System.out.println("Value: " + somethingOrNothing);
+        System.out.println("Functor Maybe half(square(Maybe x)): " + somethingOrNothing);
 
     }
 }

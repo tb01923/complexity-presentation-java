@@ -15,4 +15,5 @@ public abstract class Maybe<T> implements Monad<T, Maybe<T>> {
         return Nothing.of(null) ;
     }
 
+    public abstract boolean  isJust() ;
 }

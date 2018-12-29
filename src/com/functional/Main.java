@@ -7,6 +7,8 @@ public class Main {
 
         DemoReduce.demo();
         DemoMaybe.demo();
+        DemoMaybe2.demo();
+        DemoMaybe3.demo();
         DemoEither.demo();
         DemoCurry.demo();
 

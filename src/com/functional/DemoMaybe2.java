@@ -29,7 +29,7 @@ public class DemoMaybe2 extends Demo {
                         chain(maybeIncrement).
                         map(half) ;
 
-        System.out.println("Value: " + somethingOrNothing);
+        System.out.println("Monad Maybe half(increment(sqaure(z))): " + somethingOrNothing);
 
     }
 }

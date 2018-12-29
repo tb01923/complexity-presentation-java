@@ -25,7 +25,7 @@ public class DemoEither extends Demo {
                         map(square).
                         map(half) ;
 
-        System.out.println("Value: " + somethingOrError);
+        System.out.println("Functor Either.tryable(f) half(square(E`    ither x)): " + somethingOrError);
 
     }
 }

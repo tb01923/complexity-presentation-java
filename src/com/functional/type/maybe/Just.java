@@ -1,5 +1,8 @@
 package com.functional.type.maybe;
 
+import com.functional.higherType.Functor;
+import sun.rmi.transport.ObjectTable;
+
 import java.util.function.Function ;
 
 public class Just <T> extends Maybe<T> {
@@ -8,6 +11,14 @@ public class Just <T> extends Maybe<T> {
 
     private Just(T value) {
         this.value = value ;
+    }
+
+    public Just<T> ap(Functor<?,?> v) {
+
+        Function thisF = (Function)this.value ;
+        Just justV = (Just)v;
+        return justV.map(thisF) ;
+
     }
 
     public Just<T> map(Function<T, T> f) {
@@ -34,6 +45,10 @@ public class Just <T> extends Maybe<T> {
 
     public static <T> Just<T> of(T value) {
         return new Just<T>(value) ;
+    }
+
+    public boolean  isJust() {
+        return true ;
     }
 
 }
